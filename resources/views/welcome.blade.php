@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+  <h1 class="text-center text-light">Ingresa a la vista deseada</h1>
+  <div class="form-group">
+    <div class="mb-3">
+      <a href="{{ route('categories.create') }}" class="btn btn-info btn-lg">Ingresar a la vista crear</a>
+    </div>
+
+    <div class="mb-3">
+      <a href="{{ route('categories.index') }}" class="btn btn-info btn-lg my-5">Ingresar a la vista index</a>
+    </div>
+  </div>
+@endsection

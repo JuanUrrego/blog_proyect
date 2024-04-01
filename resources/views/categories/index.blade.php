@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <h2>Lista De Categorias</h2>
+  <h2 class="text-center text-light">Lista De Categorias</h2>
   <table class="table">
     <thead>
         <tr>
@@ -24,10 +24,11 @@
                     @endif
                 </td>
                 <td>
-                    <a class="btn btn-primary">Editar</a>
-                    <a class="btn btn-primary">Eliminar</a>
+                    <a class="btn btn-success">Editar</a>
+                    <a class="btn btn-warning">Eliminar</a>
                 </td>
             </tr>
         @endforeach
     </tbody>
+</table>
 @endsection
