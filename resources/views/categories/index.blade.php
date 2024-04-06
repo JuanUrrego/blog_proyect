@@ -24,8 +24,8 @@
                     @endif
                 </td>
                 <td>
-                    <a class="btn btn-success">Editar</a>
-                    <a class="btn btn-warning">Eliminar</a>
+                    <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-success">Editar</a>
+                    <a href="{{ route('categories.show', $category->id) }}" class="btn btn-warning">Eliminar</a>
                 </td>
             </tr>
         @endforeach
