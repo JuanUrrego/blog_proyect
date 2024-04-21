@@ -75,7 +75,7 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(CreatePostRequest $request, Post $post)
     {
         $post->update($request->all());
         return redirect()->route('posts.index')->with('success', 'Post updated successfully');
