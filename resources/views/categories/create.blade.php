@@ -16,6 +16,8 @@
             </div>
 
             <button class="btn btn-primary my-2" type="submit">Guardar</button>
+            <a href="{{ route('categories.index') }}" class="btn btn-secondary my-2">Regresar</a>
         </div>
     </form>
 @endsection
+
